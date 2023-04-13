@@ -1,0 +1,188 @@
+Build started at 2023-04-13T18:22:35.613719
+Main binary: /usr/local/opt/python@3.11/bin/python3.11
+Build Options: 
+Python system: Darwin
+The Meson build system
+Version: 1.1.0
+Source dir: /Users/alexdeeri/Projects/CLion/interview/alphabet_position
+Build dir: /Users/alexdeeri/Projects/CLion/interview/alphabet_position/build
+Build type: native build
+Project name: alphabet_position
+Project version: undefined
+-----
+Detecting compiler via: cc --version
+compiler returned <Popen: returncode: 0 args: ['cc', '--version']>
+compiler stdout:
+Apple clang version 14.0.0 (clang-1400.0.29.202)
+Target: x86_64-apple-darwin22.4.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+compiler stderr:
+
+Running command: cc -E -dM -
+-----
+Detecting linker via: cc -Wl,--version -L/usr/local/opt/libffi/lib -I/usr/local/opt/libffi/include
+linker returned <Popen: returncode: 1 args: ['cc', '-Wl,--version', '-L/usr/local/opt/libffi...>
+linker stdout:
+
+linker stderr:
+ld: unknown option: --version
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+-----
+Detecting Apple linker via: cc -Wl,-v -L/usr/local/opt/libffi/lib -I/usr/local/opt/libffi/include
+linker stdout:
+
+linker stderr:
+@(#)PROGRAM:ld  PROJECT:ld64-820.1
+BUILD 20:07:01 Nov  7 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/local/opt/libffi/lib
+	/usr/local/lib
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -I/usr/local/opt/libffi/include -L/usr/local/opt/libffi/lib
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /Users/alexdeeri/Projects/CLion/interview/alphabet_position/build/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (clang 14.0.0 "Apple clang version 14.0.0 (clang-1400.0.29.202)")
+C linker for the host machine: cc ld64 820.1
+-----
+Detecting compiler via: cc --version
+compiler returned <Popen: returncode: 0 args: ['cc', '--version']>
+compiler stdout:
+Apple clang version 14.0.0 (clang-1400.0.29.202)
+Target: x86_64-apple-darwin22.4.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+compiler stderr:
+
+Running command: cc -E -dM -
+-----
+Detecting linker via: cc -Wl,--version -L/usr/local/opt/libffi/lib -I/usr/local/opt/libffi/include
+linker returned <Popen: returncode: 1 args: ['cc', '-Wl,--version', '-L/usr/local/opt/libffi...>
+linker stdout:
+
+linker stderr:
+ld: unknown option: --version
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+-----
+Detecting Apple linker via: cc -Wl,-v -L/usr/local/opt/libffi/lib -I/usr/local/opt/libffi/include
+linker stdout:
+
+linker stderr:
+@(#)PROGRAM:ld  PROJECT:ld64-820.1
+BUILD 20:07:01 Nov  7 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/local/opt/libffi/lib
+	/usr/local/lib
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -I/usr/local/opt/libffi/include -L/usr/local/opt/libffi/lib
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /Users/alexdeeri/Projects/CLion/interview/alphabet_position/build/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (clang 14.0.0 "Apple clang version 14.0.0 (clang-1400.0.29.202)")
+C linker for the build machine: cc ld64 820.1
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Pkg-config binary for 1 is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: /usr/local/bin/pkg-config (0.29.2)
+Determining dependency 'criterion' with pkg-config executable '/usr/local/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/local/bin/pkg-config --modversion criterion` -> 0
+stdout:
+2.4.1
+-----------
+env[PKG_CONFIG_PATH]: 
+Called `/usr/local/bin/pkg-config --cflags criterion` -> 0
+stdout:
+-I/usr/local/Cellar/criterion/2.4.1_2/include -I/usr/local/Cellar/libgit2/1.6.4/include -I/usr/local/Cellar/nanomsg/1.2/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX13.sdk/usr/include/ffi
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/local/bin/pkg-config --libs criterion` -> 0
+stdout:
+-L/usr/local/Cellar/criterion/2.4.1_2/lib -lcriterion
+-----------
+env[PKG_CONFIG_PATH]: 
+Called `/usr/local/bin/pkg-config --libs criterion` -> 0
+stdout:
+-L/usr/local/Cellar/criterion/2.4.1_2/lib -lcriterion
+-----------
+Running compile:
+Working directory:  /Users/alexdeeri/Projects/CLion/interview/alphabet_position/build/meson-private/tmp7dow11h0
+Command line:  cc -L/usr/local/opt/libffi/lib -I/usr/local/opt/libffi/include /Users/alexdeeri/Projects/CLion/interview/alphabet_position/build/meson-private/tmp7dow11h0/testfile.c -o /Users/alexdeeri/Projects/CLion/interview/alphabet_position/build/meson-private/tmp7dow11h0/output.exe -O0 -Werror=implicit-function-declaration 
+
+Code:
+ 
+        #include<stdio.h>
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /Users/alexdeeri/Projects/CLion/interview/alphabet_position/build/meson-private/tmp3pzr6fep
+Command line:  cc -I/usr/local/opt/libffi/include /Users/alexdeeri/Projects/CLion/interview/alphabet_position/build/meson-private/tmp3pzr6fep/testfile.c -o /Users/alexdeeri/Projects/CLion/interview/alphabet_position/build/meson-private/tmp3pzr6fep/output.obj -c -O0 -Werror=implicit-function-declaration -Werror=unknown-warning-option -Werror=unused-command-line-argument -Werror=ignored-optimization-argument --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ programs: =/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+libraries: =/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0
+
+Compiler stderr:
+ 
+Run-time dependency criterion found: YES 2.4.1
+Adding test "solution test"
+Build targets in project: 1
+
+Found ninja-1.11.1 at /usr/local/bin/ninja

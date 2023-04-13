@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "/Users/alexdeeri/Projects/CLion/interview/archivator/build",
+    "command": "cc -Isolution.bin.p -I. -I.. -I/usr/local/Cellar/criterion/2.4.1_2/include -I/usr/local/Cellar/libgit2/1.6.4/include -I/usr/local/Cellar/nanomsg/1.2/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX13.sdk/usr/include/ffi -I/usr/local/opt/libffi/include -fcolor-diagnostics -Wall -Winvalid-pch -O0 -g -MD -MQ solution.bin.p/solution.c.o -MF solution.bin.p/solution.c.o.d -o solution.bin.p/solution.c.o -c ../solution.c",
+    "file": "../solution.c",
+    "output": "solution.bin.p/solution.c.o"
+  },
+  {
+    "directory": "/Users/alexdeeri/Projects/CLion/interview/archivator/build",
+    "command": "cc -Isolution.bin.p -I. -I.. -I/usr/local/Cellar/criterion/2.4.1_2/include -I/usr/local/Cellar/libgit2/1.6.4/include -I/usr/local/Cellar/nanomsg/1.2/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX13.sdk/usr/include/ffi -I/usr/local/opt/libffi/include -fcolor-diagnostics -Wall -Winvalid-pch -O0 -g -MD -MQ solution.bin.p/tests.c.o -MF solution.bin.p/tests.c.o.d -o solution.bin.p/tests.c.o -c ../tests.c",
+    "file": "../tests.c",
+    "output": "solution.bin.p/tests.c.o"
+  }
+]

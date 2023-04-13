@@ -1,0 +1,1 @@
+[{"cmd": ["/Users/alexdeeri/Projects/CLion/interview/bit_counting/build/solution.bin", "--always-succeed"], "env": {}, "name": "solution test", "workdir": null, "timeout": 30, "suite": ["bit_counting"], "is_parallel": true, "priority": 0, "protocol": "exitcode", "depends": ["solution.bin@exe"]}]
