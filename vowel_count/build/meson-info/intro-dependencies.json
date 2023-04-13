@@ -1,0 +1,1 @@
+[{"name": "criterion", "version": "2.4.1", "compile_args": ["-I/usr/local/Cellar/criterion/2.4.1_2/include", "-I/usr/local/Cellar/libgit2/1.6.4/include", "-I/usr/local/Cellar/nanomsg/1.2/include", "-I/Library/Developer/CommandLineTools/SDKs/MacOSX13.sdk/usr/include/ffi"], "link_args": ["/usr/local/Cellar/criterion/2.4.1_2/lib/libcriterion.dylib"]}]
